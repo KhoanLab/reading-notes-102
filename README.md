@@ -10,6 +10,8 @@
 
 - [Class 1 Reading Notes](102/class1.md)
 - [Class 3 Reading Notes](102/class3.md)
+- [Class 4 Reading Notes](102/class4.md)
+- [Class 5 Reading Notes](102/class5.md)
 
 ### *201 Notes*
 

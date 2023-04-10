@@ -28,3 +28,82 @@ An "assignment" operator is a type of operator used in programming languages to 
     - Thông tin nhận được từ người dùng thường được gọi là "đầu vào" (input). Trong lĩnh vực máy tính, đầu vào có thể là bất kỳ dữ liệu hay thông tin nào được nhập vào hệ thống máy tính, bằng cách sử dụng bàn phím, chuột, hoặc các thiết bị khác. Đầu vào có thể có nhiều dạng khác nhau, bao gồm văn bản, số, lệnh và các loại dữ liệu khác. Khi nhận được đầu vào, hệ thống máy tính có thể xử lý nó theo nhiều cách khác nhau, chẳng hạn như lưu trữ nó trong bộ nhớ, thao tác với phần mềm, hoặc hiển thị nó trên màn hình.
 
     - Information received from the user is generally referred to as "input". In computing, input can be any data or information that is entered into a computer system, either by a person or by another program or device. This input can take many forms, including text, numbers, commands, and other types of data. Once input is received, a computer system can process it in various ways, such as storing it in memory, manipulating it with software, or displaying it on a screen.
+
+# Demo
+
+`
+let a = 1;
+let b = 2;
+let c = a + b;
+
+// variables - containers for storing data
+console.log(a);
+console.log(c);
+console.log('Hello World!');
+
+// variables can be declared 4 ways
+// const --> constant, can't be changed
+// let --> changeable value
+// var --> old way, don't do this
+// {none} --> don't worry about this for now
+
+const myName = 'Khoan';
+console.log(myName);
+
+
+let myFavColor = 'yellow';
+console.log(myFavColor);
+myFavColor = "blue";
+console.log(myFavColor);
+
+// DATA TYPES
+// strings --> 'text' or "text" or '2' or "2"
+// numbers/integers --> 2 or 42 or 123123
+// boolean --> true or false
+
+
+console.log('Hello World!');
+console.log(42);
+console.log(42 + 9);
+
+// Useful functions
+// console.log() --> print infomation to the console
+// alert() --> give us a popup box
+// prompt() --> how you can get info from the user
+// document.write() --> how you will put content on your website
+
+
+// CONDITIONAL LOGIC (if/else if/else)
+let userName = prompt('What is your name?');
+userName = userName.toLowerCase();
+
+if (userName == "Khoan") {
+  alert('Hiya teach!');
+  console.log('I am in the if-statement');
+} else if (userName == 'bEN') {
+  alert("TA's are some");
+} else {
+  alert('Hello and welcome, class');
+}
+
+// OPERATORS
+
+let myNumber = 42;
+
+console.log(myNumber == '42');
+console.log(myNumber === 42);
+console.log(myNumber === '42');
+
+let reponse = prompt('Do you like cookies?')
+
+if (response = 'yes') {
+  alert("you're come to the right place!");
+} else if (response = 'no') {
+  alert("what are you doing at a cookie shop website?")
+} else {
+  alert("i'm not sure what that means....");
+}
+
+let value = 2 + '2';
+console.log(typeof (value));
+`

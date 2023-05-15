@@ -23,3 +23,96 @@
    - Vòng lặp while sẽ thực hiện lặp đi lặp lại miễn là điều kiện được chỉ định trong câu lệnh while được đánh giá là đúng. Do đó, số lần vòng lặp while sẽ thực thi tùy thuộc vào điều kiện cụ thể được đánh giá và số lần nó đánh giá là đúng. Nếu điều kiện không bao giờ đúng, vòng lặp sẽ không thực hiện. Nếu điều kiện luôn đúng, vòng lặp sẽ thực hiện vô thời hạn, được gọi là vòng lặp vô hạn.
 
    - A while loop will execute repeatedly as long as the condition specified in the while statement evaluates to true. Therefore, the number of times a while loop will execute depends on the specific condition being evaluated and how many times it evaluates to true. If the condition is never true, the loop will not execute at all. If the condition is always true, the loop will execute indefinitely, which is known as an infinite loop.
+
+
+
+// TRUTHTABLE!!!
+
+// console.log(3 === '3') // Data type
+
+// Logical AND / T && T
+// console.log(true && false && true && false) // false
+// Truong DH 1: Tot nghiep 12 && Thi > 20
+//                    true          19 > 20
+//                    true  &&        false  
+
+// console.log (false && false) // false
+//              false       &&     false
+//                          flase
+
+// console.log(!true); // 
+
+// Logical OR / T || F
+// console.log(true || false || false || true); // true
+// Truong DH 2: Tot nghiep 12 || Thi > 20
+//                 T        ||    F
+//                 F        ||     T
+
+// let myName = 'Hung'; // 
+// console.log(myName == 'Khoan' || myName == 'Hoa'); 
+// //                  F                  F
+
+// console.log(myName == 'Khoan' && myName == 'Hoa' && myName == 'Hung' && myName == 'Nhat');
+//                 T                    F
+
+// console.log(true == !false);
+//            true == true
+//                  true
+
+// console.log(!(5 == '5') == (5 === '5')); // false
+//               F      ==      F
+//                     T
+
+
+//While loop
+// while(condition TRUE){
+//    excute code
+//}
+
+// let userName = prompt('What is your name?'); // ''
+
+// while(userName == ''){ // True // false
+//   userName = prompt('No really, tell me your name...');
+// }
+
+// console.log(userName);
+
+
+// let num = 0;
+
+// while(num < 10){ // true
+//   num++; // num += num
+//   console.log(num);
+// }
+
+// 0 | 0 < 10 ? T | excute num = 1;
+// 1 | 1 < 10 ? T | excute num = 2;
+// 2 | 2 < 10 ? T | excute num = 3;
+// ...
+// 8 | 8 < 10 ? T | excute num = 9;
+// 9 | 9 < 10 ? T | excute num = 10;
+// 10 | 10 < 10 ? F | break;
+
+// For
+// for(init value; condition to evaluate ; increment)
+
+// for(let i = 1; i <= 10; i = i * 5){
+//   console.log(i*2);
+// }
+
+// 0 | 0 < 10 ? T excute  | log(i) = 0 | i = i + 1
+// 1 | 1 < 10 ? T | excute: log(i) = 1 | i = 2
+// 2 | 2 < 10 ? T | excute: log(i) = 2 | i = 3
+// ...
+// i = 9 | 9 < 10 ? T | excute: log(i) = 9 | i = 10
+// i = 10 | 10 < 10 ? F | break.
+
+
+// i = 0 | 0 <= 10 ? T | excute | log(i) = 0 | i = i + 5 // 0 + 5 // i = 5
+// i = 5 | 5 <= 10 ? T | excute | log(i) = 5 | i = i + 5 // 5 + 5 = 10
+// i = 10 | 10 <= 10 ? T | excute | log(i) = 10 | i = i + 5 // 10 + 5 = 15
+
+// i = 0 | 0 <= 10 ? T | excute | log(i*2) = 0*2 = 0 | i = i * 5 // 0 + 5 = 5
+// i = 5 | 5 <= 10 ? T | excute | log(i*2) = 5*2 = 10 | i = i + 5 // 5 + 5 = 10
+// i = 10 | 10 <= 10 ? T | excute | log(i*2) = 10*2 = 20 | i = i + 5 // 15 
+// i = 15 | 15 <= 10 ? F | break
